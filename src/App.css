@@ -21,6 +21,13 @@ body {
   align-items: center;
 }
 
+.header {
+  background: #45b69c;
+  position: sticky;
+  top: 0;
+  z-index: 111;
+}
+
 .header .header-title {
   display: flex;
   justify-content: center;
@@ -33,6 +40,17 @@ body {
   margin-right: 0.7rem;
   pointer-events: none;
   user-select: none;
+}
+
+@media (max-width: 467px) {
+  .header .header-title svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header .header-title h1 {
+    font-size: 1.2rem;
+  }
 }
 
 .header button {
